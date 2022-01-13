@@ -11,6 +11,8 @@
 		647E3EE1278CF939001B99E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3EE0278CF939001B99E0 /* ContentView.swift */; };
 		647E3EE3278CF93B001B99E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647E3EE2278CF93B001B99E0 /* Assets.xcassets */; };
 		647E3EE6278CF93B001B99E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647E3EE5278CF93B001B99E0 /* Preview Assets.xcassets */; };
+		647E3EED278CF95E001B99E0 /* LoginRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3EEC278CF95E001B99E0 /* LoginRegister.swift */; };
+		647E3EF0278D3A57001B99E0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3EEF278D3A56001B99E0 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		647E3EE0278CF939001B99E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		647E3EE2278CF93B001B99E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		647E3EE5278CF93B001B99E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		647E3EEC278CF95E001B99E0 /* LoginRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegister.swift; sourceTree = "<group>"; };
+		647E3EEF278D3A56001B99E0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 				647E3EE0278CF939001B99E0 /* ContentView.swift */,
 				647E3EE2278CF93B001B99E0 /* Assets.xcassets */,
 				647E3EE4278CF93B001B99E0 /* Preview Content */,
+				647E3EEE278CF967001B99E0 /* Views */,
 			);
 			path = "iOS Playground";
 			sourceTree = "<group>";
@@ -65,6 +70,15 @@
 				647E3EE5278CF93B001B99E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		647E3EEE278CF967001B99E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				647E3EEF278D3A56001B99E0 /* Profile.swift */,
+				647E3EEC278CF95E001B99E0 /* LoginRegister.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				647E3EE1278CF939001B99E0 /* ContentView.swift in Sources */,
+				647E3EF0278D3A57001B99E0 /* Profile.swift in Sources */,
 				647E3EDF278CF939001B99E0 /* iOS_PlaygroundApp.swift in Sources */,
+				647E3EED278CF95E001B99E0 /* LoginRegister.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
