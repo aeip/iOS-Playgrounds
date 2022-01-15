@@ -12,12 +12,14 @@ struct DualMenu: View {
     var body: some View {
         ZStack {
             VStack {
-                Text("Background Content")
-                Text("Background Content")
-                Text("Background Content")
-                Text("Background Content")
-                Text("Background Content")
-                Text("Background Content")
+                Text("Scrollable Music Player View")
+                    .font(.system(size: 50, weight: .bold, design: .rounded))
+                    .padding()
+                Spacer()
+                    .frame(height: 20)
+                Text("Some actions included...")
+                    .font(.system(size: 20, weight: .bold, design: .monospaced))
+                Spacer()
             }
             Spacer()
             VStack {
@@ -45,6 +47,9 @@ struct Player: View {
             Group {
                 if floating {
                     BottomPlayer()
+                        .frame(width: .infinity, height: 75)
+                        .background(.orange)
+                        .cornerRadius(10)
                 } else {
                     FullPlayer()
                 }
@@ -262,28 +267,26 @@ struct BottomPlayer: View {
     var body: some View {
         HStack(spacing: 16) { // Player
             Spacer()
-            ZStack {
-                Rectangle()
-                    .fill(.red)
-                    .frame(width: 50, height: 50)
-                    .cornerRadius(5)
-                    .shadow(radius: 5)
-                Image(systemName: "music.note")
-                    .foregroundColor(.white)
-                    .padding(2)
-                
-            }
-            Text("Not Playing")
+            Image("Album7")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .cornerRadius(5)
+                .shadow(radius: 5)
+            Text("Spilled Orange Juice")
+                .foregroundColor(.white)
+                .font(.system(size: 17, weight: .bold, design: .rounded))
             Spacer()
             Button {
                 
             } label: {
                 Image(systemName: "play.fill")
+                    .foregroundColor(.black)
             }
             Button {
                 
             } label: {
                 Image(systemName: "forward.fill")
+                    .foregroundColor(.black)
             }
             Spacer()
         }
@@ -294,22 +297,22 @@ struct Tabs: View {
     var body: some View {
         HStack { // Tabs
             Spacer()
-            Image(systemName: "person.crop.circle")
+            Image(systemName: "music.note.house.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 25)
             Spacer()
-            Image(systemName: "music.note.list")
+            Image(systemName: "airpodsmax")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 25, height: 25)
+            Spacer()
+            Image(systemName: "hifispeaker.and.homepodmini.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 25)
             Spacer()
             Image(systemName: "gear")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 25, height: 25)
-            Spacer()
-            Image(systemName: "square.and.pencil")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 25)
