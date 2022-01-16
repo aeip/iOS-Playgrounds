@@ -15,6 +15,7 @@
 		647E3EF0278D3A57001B99E0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3EEF278D3A56001B99E0 /* Profile.swift */; };
 		647E3EF22790D83B001B99E0 /* DualMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3EF12790D83B001B99E0 /* DualMenu.swift */; };
 		647E3EF8279225F9001B99E0 /* MarqueeText in Frameworks */ = {isa = PBXBuildFile; productRef = 647E3EF7279225F9001B99E0 /* MarqueeText */; };
+		647E3EFA2794ABF6001B99E0 /* ProductPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3EF92794ABF6001B99E0 /* ProductPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		647E3EEC278CF95E001B99E0 /* LoginRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegister.swift; sourceTree = "<group>"; };
 		647E3EEF278D3A56001B99E0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		647E3EF12790D83B001B99E0 /* DualMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualMenu.swift; sourceTree = "<group>"; };
+		647E3EF92794ABF6001B99E0 /* ProductPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				647E3EEF278D3A56001B99E0 /* Profile.swift */,
 				647E3EEC278CF95E001B99E0 /* LoginRegister.swift */,
 				647E3EF12790D83B001B99E0 /* DualMenu.swift */,
+				647E3EF92794ABF6001B99E0 /* ProductPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647E3EFA2794ABF6001B99E0 /* ProductPage.swift in Sources */,
 				647E3EE1278CF939001B99E0 /* ContentView.swift in Sources */,
 				647E3EF0278D3A57001B99E0 /* Profile.swift in Sources */,
 				647E3EF22790D83B001B99E0 /* DualMenu.swift in Sources */,

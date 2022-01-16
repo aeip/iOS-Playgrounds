@@ -55,42 +55,31 @@ struct Player: View {
                 }
             }
             .gesture(DragGesture()
-                     
                         .onChanged({ (value) in
-                
-                
                 if self.height >= 0{
                     
                     self.height += value.translation.height / 8
                     self.opacity = 0.5
                 }
-                
             })
                         .onEnded({ (value) in
-                
                 if self.height > 100 && !self.floating{
-                    
                     self.height = geo.size.height - 75
                     self.opacity = 1
                     self.floating = true
-                    
                 }
                 else{
-                    
                     if self.height < geo.size.height - 150{
-                        
                         self.height = 0
                         self.opacity = 1
                         self.floating = false
                     }
                     else{
-                        
                         self.height = geo.size.height - 75
                         self.opacity = 1
                     }
                 }
             })
-                     
             ).opacity(self.opacity)
                 .offset(y: self.height)
                 .animation(.spring())
@@ -147,13 +136,13 @@ struct FullPlayer: View {
                 Spacer()
                 HStack {
                     MarqueeText(
-                         text: "Spilled Orange Juice",
-                         font: .systemFont(ofSize: 25, weight: .bold),
-                         leftFade: 16,
-                         rightFade: 16,
-                         startDelay: 3,
-                         alignment: .center
-                         )
+                        text: "Spilled Orange Juice",
+                        font: .systemFont(ofSize: 25, weight: .bold),
+                        leftFade: 16,
+                        rightFade: 16,
+                        startDelay: 3,
+                        alignment: .center
+                    )
                         .foregroundColor(.orange)
                     Image(systemName: "e.square.fill")
                         .foregroundColor(.white)
@@ -239,10 +228,10 @@ struct FullPlayer: View {
             alignment: .center
         )
         .background(
-        Image("Album7")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .blur(radius: 40)
+            Image("Album7")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .blur(radius: 40)
         )
         .cornerRadius(10)
     }
